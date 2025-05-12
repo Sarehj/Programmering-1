@@ -1,0 +1,40 @@
+Initialisera variabler:
+   Initiera playAgain  med värde true (för att spela om)
+   Initiera bestRecord med värde ett stort tal, MaxValue, för att hålla reda på bästa resultatet
+
+Gör medan spelaren vill spela och playAgain är true
+   
+   Skriv ut introduktioner 
+   Generera ett slumpmässigt tal mellan 1 och 100 (num)
+   Initiera spelräknare för gissningar (guessCount) med värde 0
+   Initiera correctGuess med värde false för att hålla reda på om spelaren gissar rätt tal
+
+
+Starta en loop för att gissa talet
+   Öka räknaren för gissningar med 1
+   Skriv in ett värde för guess
+   Om talet är utanför intervallet 1–100
+         Skriv ut ett felmeddelande och be om nytt tal
+   Om guess är lite än num
+         Skriv ut att guess är för liten och att de ska prova ett större tal
+         Om guess är mycket nära (±3), skriv ut att de är nära
+    Annars om guess är högre än num
+         Skriv ut att guess är för stor och att de ska prova ett mindre tal
+         Om gissningen är mycket nära (±3), skriv ut att de är nära
+
+    Om gissningen är korrekt
+         Skriv ut gratulationer och visa antalet gissningar
+         Om antalet gissningar är bättre än bästa rekordet, uppdatera bestRecord
+         Sätt correctGuess till true för att avsluta loopen
+
+
+    Om spelaren inte har gissat rätt efter 10 försök
+         Skriv ut rätt svar och avsluta omgången
+
+
+Fråga spelaren om de vill spela igen
+     Initiera response och skriv in ett värde för den
+     Om spelaren svarar "ja"
+            starta en ny omgång
+     Om spelaren svarar "nej" 
+            Skriv ut bästa resultatet och avsluta spelet
